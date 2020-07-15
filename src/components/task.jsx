@@ -125,13 +125,13 @@ class Task extends Component {
             style={{ fontSize: 24, display: "block", width: 300 }}
           >
             <span>Completed tasks {this.state.completedTasks.length}</span>
-            <span
+            <button
               onClick={this.clearCompletedTasks}
               style={{ position: "relative", left: 110 }}
               className="badge badge-danger"
             >
               Clear All
-            </span>
+            </button>
           </div>
 
           {this.state.completedTasks.map((t) => (
